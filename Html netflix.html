@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Netflix</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+        }
+        
+        .navbar {
+            background-color: #111;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar li {
+            list-style: none;
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        .navbar img {
+            width: 100px;
+        }
+        
+        .main {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        
+        .main h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .main h3 {
+            font-size: 24px;
+            margin-bottom: 40px;
+            color: #666;
+        }
+        
+        .search {
+            margin-bottom: 20px;
+        }
+        
+        .box {
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        .try {
+            padding: 10px 20px;
+            background-color: red;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .container1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .text, .image {
+            flex: 1;
+            padding: 0 20px;
+        }
+        
+        .text h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .text p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .question {
+            text-align: center;
+            background-color: #f3f3f3;
+            padding: 100px 20px;
+        }
+        
+        .quest {
+            margin-bottom: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .textbox {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            font-size: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .list1 {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .list1 li {
+            margin-bottom: 10px;
+        }
+        
+        .footer h5 {
+            margin-bottom: 20px;
+        }
+        
+        .end {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+    <link rel="stylesheet" href="https://kit.fontawesome.com/bc3a1796c2.js" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/870/870910.ico"/> 
+</head>
+<body>
+
+    <div class="navbar">
+        <li class="logo"><img src="https://www.searchpng.com/wp-content/uploads/2019/02/Netflix-Logo-PNG-image-200x200.png"></li>
+        <li class="buttons"><a href="#">Sign In</a></li>
+    </div>
+
+    <div class="main">
+        <div class="area">
+            <h1>Unlimited movies, TV <br>shows, and more.</h1>
+            <h3>Watch anywhere. Cancel anytime.</h3>
+            <div class="search">
+                <input type="text" class="box" placeholder="Email">
+                <span class="try">Try 30 days free <i class="fas fa-chevron-right"></i></span>
+            </div>
+            <h4>Ready to watch? Enter your email to create or access your account</h4>
+        </div>
+    </div>
+   
+    <div class="container1">
+        <div class="text">
+            <h1>Enjoy on your TV.</h1>
+            <p>Watch on Smart TVs, Playstation, Xbox, <br>Chromecast, Apple TV, Blu-ray players, and<br>more.</p>
+        </div>
+        <div class="image">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png">
+        </div>
+    </div>
+
+    <div class="container1">
+        <div class="image">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile.png">
+        </div>
+        <div class="text">
+            <h1>Download your shows to watch on the go.</h1>
+            <p>Save your data and watch all your favorites offline.</p>
+        </div>
+    </div>
+    
+    <div class="container1">
+        <div class="text">
+            <h1>Watch everywhere.</h1>
+            <p>Stream unlimited movies and TV shows on <br>your phone, tablet, laptop, and TV without paying more.</p>
+        </div>
+        <div class="image">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png">
+        </div>
+    </div>
+
+    <div class="question">
+        <h1>Frequently Asked Questions</h1>
+        <div class="quest">
+            <div class="textbox">What is Netflix?</div>
+            <i class="las la-plus"></i>
+       
